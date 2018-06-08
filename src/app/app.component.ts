@@ -11,7 +11,7 @@ export class AppComponent {
   exampleSchema = {
     'type': 'object',
     'properties': {
-      'first_name': { 'type': 'string' },
+      'first_name': { 'type': 'string', 'default': 'John Doe' },
       'last_name': { 'type': 'string' },
       'age': { 'type': 'integer' },
       'is_company': { 'type': 'boolean' },
@@ -51,7 +51,7 @@ export class AppComponent {
   };
 
   exampleData = {
-    'first_name': 'Jane', 'last_name': 'Doe', 'age': 25, 'is_company': false,
+    'last_name': 'Doe', 'age': 25, 'is_company': false,
     'address': {
       'street_1': '123 Main St.', 'street_2': null,
       'city': 'Las Vegas', 'state': 'NV', 'zip_code': '89123'
